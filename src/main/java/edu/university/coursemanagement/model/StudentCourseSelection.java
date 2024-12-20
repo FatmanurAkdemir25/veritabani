@@ -26,6 +26,43 @@ public class StudentCourseSelection {
 
     private boolean isApproved;
 
-    // Getter ve Setter metodları
-    // ...
+    public int getSelectionID() {
+        return selectionID;
+    }
+
+    public void setSelectionID(int selectionID) {
+        this.selectionID = selectionID;
+    }
+
+    public Student getStudent() {
+        return student;
+    }
+
+    public void setStudent(Student student) {
+        this.student = student;
+    }
+
+    public Course getCourse() {
+        return course;
+    }
+
+    public void setCourse(Course course) {
+        this.course = course;
+    }
+
+    public Date getSelectionDate() {
+        return selectionDate;
+    }
+
+    public void setSelectionDate(Date selectionDate) {
+        this.selectionDate = selectionDate;
+    }
+
+    public boolean isApproved() {
+        return isApproved;
+    }
+
+    public void setApproved(boolean approved) {
+        isApproved = approved;
+    }
 }
