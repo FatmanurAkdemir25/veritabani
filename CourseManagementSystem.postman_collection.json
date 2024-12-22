@@ -1,0 +1,1489 @@
+{
+	"info": {
+		"_postman_id": "30bfaa9f-ef14-430c-a0d7-03d0773b2edc",
+		"name": "CourseManagementSystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40143415"
+	},
+	"item": [
+		{
+			"name": "api/Advisors",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/Advisors",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"Advisors"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/Advisors",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Advisors"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n\t{\n\t\t\"advisorID\":1,\n\t\t\"fullname\":\"Prof. Dr. Hamdi Tolga Kahraman\",\n\t\t\"title\":\"Bölüm Başkanı\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\",\t\n\t\t\"email\":\"tolgakahraman@ktu.edu.tr\",\n\t\t\"students\":[\n\t\t  {\n\t\t\t\"studentID\":10001,\n\t\t\t\"firstname\":\"Ahmet\",\n\t\t\t\"lastname\":\"Yılmaz\"\n\t\t  },\n\t\t  {\n\t\t\t\"studentID\":10002,\n\t\t\t\"firstname\":\"Mehmet\",\n\t\t\t\"lastname\":\"Kaya\"\n\t\t  },\n\t\t  {\n\t\t\t\"studentID\":10003,\n\t\t\t\"firstname\":\"Ayşe\",\n\t\t\t\"lastname\":\"Demir\"\n\t\t  },\n\t\t  {\n\t\t\t\"studentID\":10004,\n\t\t\t\"firstname\":\"Fatma\",\n\t\t\t\"lastname\":\"Çelik\"\n\t\t  }\n\n\t\t]\n\t},\n\t{\n\t\t\"advisorID\":2,\n\t\t\"fullname\":\"Doç. Dr. Hacer Özyurt\",\n\t\t\"title\":\"\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\",\t\n\t\t\"email\":\"hozyurt@ktu.edu.tr\",\n\t\t\"students\":[\n\t\t  {\n\t\t\t\"studentID\":10005,\n\t\t\t\"firstname\":\"Emre\",\n\t\t\t\"lastname\":\"Arslan\"\n\t\t  },\n\t\t  {\n\t\t\t\"studentID\":10006,\n\t\t\t\"firstname\":\"Elif\",\n\t\t\t\"lastname\":\"Koç\"\n\t\t  },\n\t\t  {\n\t\t\t\"studentID\":10007,\n\t\t\t\"firstname\":\"Ali\",\n\t\t\t\"lastname\":\"Şahin\"\n\t\t  },\n\t\t  {\n\t\t\t\"studentID\":10008,\n\t\t\t\"firstname\":\"Zeynep\",\n\t\t\t\"lastname\":\"Turan\"\n\t\t  }\n\n\t\t]\n\t},\n\t{\n\t\t\"advisorID\":3,\n\t\t\"fullname\":\"Dr. Öğr. Üyesi Eyüp Gedikli\",\n\t\t\"title\":\"\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\",\t\n\t\t\"email\":\"geyup@ktu.edu.tr\",\n\t\t\"students\":[\n\t\t  {\n\t\t\t\"studentID\":10009,\n\t\t\t\"firstname\":\"Can\",\n\t\t\t\"lastname\":\"Öztürk\"\n\t\t  },\n\t\t  {\n\t\t\t\"studentID\":10010,\n\t\t\t\"firstname\":\"Merve\",\n\t\t\t\"lastname\":\"Aksoy\"\n\t\t  },\n\t\t  {\n\t\t\t\"studentID\":10011,\n\t\t\t\"firstname\":\"Efe\",\n\t\t\t\"lastname\":\"Güneş\"\n\t\t  },\n\t\t  {\n\t\t\t\"studentID\":10012,\n\t\t\t\"firstname\":\"Selin\",\n\t\t\t\"lastname\":\"Bulut\"\n\t\t  }\n\n\t\t]\n\t},\n\t{\n\t\t\"advisorID\":4,\n\t\t\"fullname\":\"Öğr. Gör. Dr. Celal Atalar\",\n\t\t\"title\":\"Bölüm Başkan Yardımcısı\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\",\t\n\t\t\"email\":\"celatalar@ktu.edu.tr\",\n\t\t\"students\":[\n\t\t  {\n\t\t\t\"studentID\":10013,\n\t\t\t\"firstname\":\"Onur\",\n\t\t\t\"lastname\":\"Kurt\"\n\t\t  },\n\t\t  {\n\t\t\t\"studentID\":10014,\n\t\t\t\"firstname\":\"Gizem\",\n\t\t\t\"lastname\":\"Aydın\"\n\t\t  },\n\t\t  {\n\t\t\t\"studentID\":10015,\n\t\t\t\"firstname\":\"Furkan\",\n\t\t\t\"lastname\":\"Boz\"\n\t\t  },\n\t\t  {\n\t\t\t\"studentID\":10016,\n\t\t\t\"firstname\":\"Ceren\",\n\t\t\t\"lastname\":\"Erdoğan\"\n\t\t  }\n\n\t\t]\n\t},\n\t{\n\t\t\"advisorID\":5,\n\t\t\"fullname\":\"Öğr. Gör. Dr. Selda Atalar\",\n\t\t\"title\":\"\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\",\t\n\t\t\"email\":\"seldaatalar@ktu.edu.tr\",\n\t\t\"students\":[\n\t\t  {\n\t\t\t\"studentID\":10017,\n\t\t\t\"firstname\":\"Burak\",\n\t\t\t\"lastname\":\"Tan\"\n\t\t  },\n\t\t  {\n\t\t\t\"studentID\":10018,\n\t\t\t\"firstname\":\"Melis\",\n\t\t\t\"lastname\":\"Durmaz\"\n\t\t  },\n\t\t  {\n\t\t\t\"studentID\":10019,\n\t\t\t\"firstname\":\"Okan\",\n\t\t\t\"lastname\":\"Yıldırım\"\n\t\t  },\n\t\t  {\n\t\t\t\"studentID\":10020,\n\t\t\t\"firstname\":\"Eylül\",\n\t\t\t\"lastname\":\"Akkaya\"\n\t\t  },\n\n\t\t]\n\t},\n\t{\n\t\t\"advisorID\":6,\n\t\t\"fullname\":\"Arş. Gör. Dr. Sefa Aras\",\n\t\t\"title\":\"\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\",\t\n\t\t\"email\":\"sefa.aras@ktu.edu.tr\",\n\t\t\"students\":[\n\t\t  {\n\t\t\t\"studentID\":10021,\n\t\t\t\"firstname\":\"Berat\",\n\t\t\t\"lastname\":\"Taş\"\n\t\t  },\n\t\t  {\n\t\t\t\"studentID\":10022,\n\t\t\t\"firstname\":\"Damla\",\n\t\t\t\"lastname\":\"Karaca\"\n\t\t  },\n\t\t  {\n\t\t\t\"studentID\":10023,\n\t\t\t\"firstname\":\"Kerem\",\n\t\t\t\"lastname\":\"Kara\"\n\t\t  },\n\t\t  {\n\t\t\t\"studentID\":10024,\n\t\t\t\"firstname\":\"Deniz\",\n\t\t\t\"lastname\":\"Erdem\"\n\t\t  },\n\n\t\t]\n\t}\n]"
+				}
+			]
+		},
+		{
+			"name": "api/Advisors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/Advisors",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"Advisors"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/Advisors",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Advisors"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n{\n\t\t\"advisorID\":7,\n\t\t\"fullname\":\"Arş. Gör. Musa Aslan\",\n\t\t\"title\":\"\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\",\t\n\t\t\"email\":\"musaaslan@ktu.edu.tr\",\n\t\t\"students\":[]\n}\n]\n"
+				}
+			]
+		},
+		{
+			"name": "api/Advisors/{id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/Advisors/{id}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"Advisors",
+						"{id}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/Advisors/{id}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Advisors",
+								"{id}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n{\"advisorID\":1,\n\t\t\"fullname\":\"Prof. Dr. Hamdi Tolga Kahraman\",\n\t\t\"title\":\"Bölüm Başkanı\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\",\t\n\t\t\"email\":\"tolgakahraman@ktu.edu.tr\",\n\t\t\"students\":\n[\n    {\n        \"studentID\": 10001,\n        \"firstname\": \"Ahmet\",\n        \"lastname\": \"Yılmaz\"\n    },\n    {\n        \"studentID\": 10002,\n        \"firstname\": \"Mehmet\",\n        \"lastname\": \"Kaya\"\n    },\n    {\n        \"studentID\": 10003,\n        \"firstname\": \"Ayşe\",\n        \"lastname\": \"Demir\"\n    },\n    {\n        \"studentID\": 10004,\n        \"firstname\": \"Fatma\",\n        \"lastname\": \"Çelik\"\n    }\n]\n}\n]"
+				}
+			]
+		},
+		{
+			"name": "api/Advisors/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/Advisors/{id}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"Advisors",
+						"{id}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/Advisors/{id}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Advisors",
+								"{id}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n{\n\t\t\"advisorID\":1,\n\t\t\"fullname\":\"Prof. Dr. Hamdi Tolga Kahraman\",\n\t\t\"title\":\"\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\",\t\n\t\t\"email\":\"tolgakahraman@ktu.edu.tr\",\n\t\t\"students\":[\n\t\t  {\n\t\t\t\"studentID\":10001,\n\t\t\t\"firstname\":\"Ahmet\",\n\t\t\t\"lastname\":\"Yılmaz\"\n\t\t  },\n\t\t  {\n\t\t\t\"studentID\":10002,\n\t\t\t\"firstname\":\"Mehmet\",\n\t\t\t\"lastname\":\"Kaya\"\n\t\t  },\n\t\t  {\n\t\t\t\"studentID\":10003,\n\t\t\t\"firstname\":\"Ayşe\",\n\t\t\t\"lastname\":\"Demir\"\n\t\t  },\n\t\t  {\n\t\t\t\"studentID\":1004,\n\t\t\t\"firstname\":\"Fatma\",\n\t\t\t\"lastname\":\"Çelik\"\n\t\t  }\n\n\t\t]\n\t}\n]"
+				}
+			]
+		},
+		{
+			"name": "api/Advisors/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/Advisors/{id}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"Advisors",
+						"{id}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/Advisors/{id}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Advisors",
+								"{id}"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "api/Users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/Users",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"Users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/Users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n\t{\n\t  \"userID\":11,\n\t  \"username\":\"tolgakahraman\",\n\t  \"passwordHash\":\"hashedpassword1\",\n\t  \"role\":\"Advisor\",\n\t  \"relatedID\":1,\n\t  \"email\":\"tolgakahraman@ktu.edu.tr\"\n\t},  \n\t{\n\t  \"userID\":12,\n\t  \"username\":\"hozyurt\",\n\t  \"passwordHash\":\"hashedpassword2\",\n\t  \"role\":\"Advisor\",\n\t  \"relatedID\":2,\n\t  \"email\":\"hozyurt@ktu.edu.tr\"\n\t},  \n\t{\n\t  \"userID\":13,\n\t  \"username\":\"geyup\",\n\t  \"passwordHash\":\"hashedpassword3\",\n\t  \"role\":\"Advisor\",\n\t  \"relatedID\":3,\n\t  \"email\":\"geyup@ktu.edu.tr\"\n\t},  \n\t{\n\t  \"userID\":14,\n\t  \"username\":\"celatalar\",\n\t  \"passwordHash\":\"hashedpassword4\",\n\t  \"role\":\"Advisor\",\n\t  \"relatedID\":4,\n\t  \"email\":\"celatalar@ktu.edu.tr\"\n\t},  \n\t{\n\t  \"userID\":15,\n\t  \"username\":\"seldaatalar\",\n\t  \"passwordHash\":\"hashedpassword5\",\n\t  \"role\":\"Advisor\",\n\t  \"relatedID\":5,\n\t  \"email\":\"seldaatalar@ktu.edu.tr\"\n\t},  \n\t{\n\t  \"userID\":16,\n\t  \"username\":\"sefa.aras\",\n\t  \"passwordHash\":\"hashedpassword6\",\n\t  \"role\":\"Advisor\",\n\t  \"relatedID\":16,\n\t  \"email\":\"sefa.aras@ktu.edu.tr\"\n\t},  \n\t{\n\t  \"userID\":17,\n\t  \"username\":\"musaaslan\",\n\t  \"passwordHash\":\"hashedpassword7\",\n\t  \"role\":\"Advisor\",\n\t  \"relatedID\":7,\n\t  \"email\":\"muaaslan@ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":22,\n\t  \"username\":\"ahmet.yilmaz\",\n\t  \"passwordHash\":\"hashedpassword12\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10001,\n\t  \"email\":\"ahmet.yilmaz@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":23,\n\t  \"username\":\"mehmet.kaya\",\n\t  \"passwordHash\":\"hashedpassword13\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10002,\n\t  \"email\":\"mehmet.kayaz@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":24,\n\t  \"username\":\"ayse.demir\",\n\t  \"passwordHash\":\"hashedpassword14\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10003,\n\t  \"email\":\"ayse.demir@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":25,\n\t  \"username\":\"fatma.celik\",\n\t  \"passwordHash\":\"hashedpassword15\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10004,\n\t  \"email\":\"fatma.celik@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":26,\n\t  \"username\":\"emre.arslan\",\n\t  \"passwordHash\":\"hashedpassword16\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10005,\n\t  \"email\":\"emre.arslan@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":27,\n\t  \"username\":\"elif.koc\",\n\t  \"passwordHash\":\"hashedpassword17\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10006,\n\t  \"email\":\"elif.koc@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":28,\n\t  \"username\":\"ali.sahin\",\n\t  \"passwordHash\":\"hashedpassword18\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10007,\n\t  \"email\":\"ali.sahin@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":29,\n\t  \"username\":\"zeynep.turan\",\n\t  \"passwordHash\":\"hashedpassword19\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10008,\n\t  \"email\":\"zeynep.turan@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":30,\n\t  \"username\":\"can.ozturk\",\n\t  \"passwordHash\":\"hashedpassword20\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10009,\n\t  \"email\":\"can.ozturk@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":31,\n\t  \"username\":\"merve.aksoy\",\n\t  \"passwordHash\":\"hashedpassword21\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10010,\n\t  \"email\":\"merve.aksoy@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":32,\n\t  \"username\":\"efe.gunes\",\n\t  \"passwordHash\":\"hashedpassword22\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10011,\n\t  \"email\":\"efe.gunes@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":33,\n\t  \"username\":\"selin.bulut\",\n\t  \"passwordHash\":\"hashedpassword23\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10012,\n\t  \"email\":\"selin.bulut@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":34,\n\t  \"username\":\"onur.kurt\",\n\t  \"passwordHash\":\"hashedpassword24\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10013,\n\t  \"email\":\"onur.kurt@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":35,\n\t  \"username\":\"gizem.aydin\",\n\t  \"passwordHash\":\"hashedpassword25\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10014,\n\t  \"email\":\"gizem.aydin@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":36,\n\t  \"username\":\"furkan.boz\",\n\t  \"passwordHash\":\"hashedpassword26\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10015,\n\t  \"email\":\"furkan.boz@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":37,\n\t  \"username\":\"ceren.erdogan\",\n\t  \"passwordHash\":\"hashedpassword27\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10016,\n\t  \"email\":\"ceren.erdogan@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":38,\n\t  \"username\":\"burak.tan\",\n\t  \"passwordHash\":\"hashedpassword28\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10017,\n\t  \"email\":\"burak.tan@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":39,\n\t  \"username\":\"melis.durmaz\",\n\t  \"passwordHash\":\"hashedpassword29\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10018,\n\t  \"email\":\"melis.durmaz@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":40,\n\t  \"username\":\"okan.yildirim\",\n\t  \"passwordHash\":\"hashedpassword30\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10019,\n\t  \"email\":\"okan.yildirim@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":41,\n\t  \"username\":\"eylul.akkaya\",\n\t  \"passwordHash\":\"hashedpassword31\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10020,\n\t  \"email\":\"eylul.akkaya@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":42,\n\t  \"username\":\"berat.tas\",\n\t  \"passwordHash\":\"hashedpassword32\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10021,\n\t  \"email\":\"berat.tas@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":43,\n\t  \"username\":\"damla.karaca\",\n\t  \"passwordHash\":\"hashedpassword33\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10022,\n\t  \"email\":\"damla.karaca@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":44,\n\t  \"username\":\"kerem.kara\",\n\t  \"passwordHash\":\"hashedpassword34\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10023,\n\t  \"email\":\"kerem.kara@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":45,\n\t  \"username\":\"deniz.erdem\",\n\t  \"passwordHash\":\"hashedpassword35\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10024,\n\t  \"email\":\"deniz.erdem@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":46,\n\t  \"username\":\"dilara.saglam\",\n\t  \"passwordHash\":\"hashedpassword36\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10025,\n\t  \"email\":\"dilara.saglam@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":47,\n\t  \"username\":\"mert.gul\",\n\t  \"passwordHash\":\"hashedpassword37\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10026,\n\t  \"email\":\"mert.gul@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":48,\n\t  \"username\":\"sude.yilmaz\",\n\t  \"passwordHash\":\"hashedpassword38\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10027,\n\t  \"email\":\"sude.yilmaz@ogr.ktu.edu.tr\"\n\t},\n\t{\n\t  \"userID\":49,\n\t  \"username\":\"yigit.acar\",\n\t  \"passwordHash\":\"hashedpassword39\",\n\t  \"role\":\"Student\",\n\t  \"relatedID\":10028,\n\t  \"email\":\"yigit.acar@ogr.ktu.edu.tr\"\n\t},\n\t\n  \n\n]"
+				}
+			]
+		},
+		{
+			"name": "api/Users{id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/Users{id}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"Users{id}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/Users{id}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Users{id}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"userID\": 11,\n        \"username\": \"tolgakahraman\",\n        \"passwordHash\": \"hashedpassword1\",\n        \"role\": \"Advisor\",\n        \"relatedID\": 1,\n        \"email\": \"tolgakahraman@ktu.edu.tr\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "api/Users{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/Users{id}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"Users{id}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/Users{id}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Users{id}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"userID\": 110,\n        \"username\": \"tolgakahraman\",\n        \"passwordHash\": \"hashedpassword1\",\n        \"role\": \"Advisor\",\n        \"relatedID\": 1,\n        \"email\": \"tolgakahraman@ktu.edu.tr\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "api/Users{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/Users{id}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"Users{id}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/Users{id}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Users{id}"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "api/Users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/Users",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"Users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/Users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Users"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"userID\": 50,\n        \"username\": \"tolga\",\n        \"passwordHash\": \"hashedpassword50\",\n        \"role\": \"Advisor\",\n        \"relatedID\": 50,\n        \"email\": \"tolga@ktu.edu.tr\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "api/Students",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/Students",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"Students"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/Students",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Students"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n  {\n\t\"studentID\":10001,\n\t\"firstname\":\"Ahmet\",\n\t\"lastname\":\"Yılmaz\",\n\t\"email\":\"ahmet.yilmaz@ogr.ktu.edu.tr\",\n\t\"advisor\":{\n\t\t\"fullname\":\"Prof. Dr. Hamdi Tolga Kahraman\",\n\t\t\"title\":\"Bölüm Başkanı\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\"\n\t},\n\t\"courses\":[\n\t{\n\t\"courseID\":1,\n\t\"courseName\":\"Algoritma ve Programlama\"\n\t},\n\t{\n\t\"courseID\":2,\n\t\"courseName\":\"Veritabanı Yönetim Sistemleri\"\n\t},\n\t{\"courseID\":8,\n\t \"courseName\":\"İşletim Sistemleri\"\n\t},\n\t{\n\t\"courseID\":14,\n        \"courseName\":\"Bitirme Projesi 1\"\n\t},\n\t{\n\t\"courseID\":20,\n\t\"courseName\":\"Bulut Tabanlı Yazılım Geliştirme\"\n\t},\n\t{\n\t\"courseID\":26,\n\t\"courseName\":\"IoT Uygulamaları\"\n\t}\n\n  },\n  {\n\t\"studentID\":10002,\n\t\"firstname\":\"Mehmet\",\n\t\"lastname\":\"Kaya\",\n\t\"email\":\"mehmet.kaya@ogr.ktu.edu.tr\",\n\t\"advisor\":{\n\t\t\"fullname\":\"Prof. Dr. Hamdi Tolga Kahraman\",\n\t\t\"title\":\"Bölüm Başkanı\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\"\n\t},\n\t\"courses\":[\n\t{\n\t\"courseID\":1,\n\t\"courseName\":\"Algoritma ve Programlama\"\n\t},\n\t{\n\t\"courseID\":2,\n\t\"courseName\":\"Veritabanı Yönetim Sistemleri\"\n\t},\n\t{\"courseID\":8,\n\t \"courseName\":\"İşletim Sistemleri\"\n\t},\n\t{\n\t\"courseID\":14,\n        \"courseName\":\"Bitirme Projesi 1\"\n\t},\n\t{\n\t\"courseID\":20,\n\t\"courseName\":\"Bulut Tabanlı Yazılım Geliştirme\"\n\t},\n\t{\n\t\"courseID\":26,\n\t\"courseName\":\"IoT Uygulamaları\"\n\t}\n\n  },\n  {\n\t\"studentID\":10003,\n\t\"firstname\":\"Ayşe\",\n\t\"lastname\":\"Demir\",\n\t\"email\":\"ayse.demir@ogr.ktu.edu.tr\",\n\t\"advisor\":{\n\t\t\"fullname\":\"Prof. Dr. Hamdi Tolga Kahraman\",\n\t\t\"title\":\"Bölüm Başkanı\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\"\n\t},\n\t\"courses\":[\n\t{\n\t\"courseID\":1,\n\t\"courseName\":\"Algoritma ve Programlama\"\n\t},\n\t{\n\t\"courseID\":2,\n\t\"courseName\":\"Veritabanı Yönetim Sistemleri\"\n\t},\n\t{\"courseID\":8,\n\t \"courseName\":\"İşletim Sistemleri\"\n\t},\n\t{\n\t\"courseID\":14,\n        \"courseName\":\"Bitirme Projesi 1\"\n\t},\n\t{\n\t\"courseID\":20,\n\t\"courseName\":\"Bulut Tabanlı Yazılım Geliştirme\"\n\t},\n\t{\n\t\"courseID\":26,\n\t\"courseName\":\"IoT Uygulamaları\"\n\t}\n\n  },\n  {\n\t\"studentID\":10004,\n\t\"firstname\":\"Fatma\",\n\t\"lastname\":\"Çelik\",\n\t\"email\":\"fatma.celik@ogr.ktu.edu.tr\",\n\t\"advisor\":{\n\t\t\"fullname\":\"Prof. Dr. Hamdi Tolga Kahraman\",\n\t\t\"title\":\"Bölüm Başkanı\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\"\n\t},\n\t\"courses\":[\n\t{\n\t\"courseID\":1,\n\t\"courseName\":\"Algoritma ve Programlama\"\n\t},\n\t{\n\t\"courseID\":2,\n\t\"courseName\":\"Veritabanı Yönetim Sistemleri\"\n\t},\n\t{\"courseID\":8,\n\t \"courseName\":\"İşletim Sistemleri\"\n\t},\n\t{\n\t\"courseID\":14,\n        \"courseName\":\"Bitirme Projesi 1\"\n\t},\n\t{\n\t\"courseID\":20,\n\t\"courseName\":\"Bulut Tabanlı Yazılım Geliştirme\"\n\t},\n\t{\n\t\"courseID\":26,\n\t\"courseName\":\"IoT Uygulamaları\"\n\t}\n\n  },\n  {\n\t\"studentID\":10005,\n\t\"firstname\":\"Emre\",\n\t\"lastname\":\"Arslan\",\n\t\"email\":\"emre.arslan@ogr.ktu.edu.tr\",\n\t\"advisor\":{\n\t\t\"fullname\":\"Doç. Dr. Hacer Özyurt\",\n\t\t\"title\":\"\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\"\n\t},\n\t\"courses\":[\n\t{\n\t\"courseID\":3,\n\t\"courseName\":\"Bilgisayar Mimarisi ve Organizasyonu\"\n\t},\n\t{\n\t\"courseID\":9,\n\t\"courseName\":\"Yazılım Mühendisliği Prensipleri\"\n\t},\n\t\"courseID\":15,\n\t\"courseName\":\"Bitirme Projesi 2\"\n\t},\n\t{\n\t\"courseID\":21,\n\t\"courseName\":\"Mobil Uygulama Geliştirme\"\n\t},\n\t{\n\t\"courseID\":27,\n\t\"courseName\":\"Büyük Veri Analitiği\"\n\t}\n  },\n  {\n\t\"studentID\":10006,\n\t\"firstname\":\"Elif\",\n\t\"lastname\":\"Koç\",\n\t\"email\":\"elif.koc@ogr.ktu.edu.tr\",\n\t\"advisor\":{\n\t\t\"fullname\":\"Doç. Dr. Hacer Özyurt\",\n\t\t\"title\":\"\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\"\n\t},\n\t\"courses\":[\n\t{\n\t\"courseID\":3,\n\t\"courseName\":\"Bilgisayar Mimarisi ve Organizasyonu\"\n\t},\n\t{\n\t\"courseID\":9,\n\t\"courseName\":\"Yazılım Mühendisliği Prensipleri\"\n\t},\n\t\"courseID\":15,\n\t\"courseName\":\"Bitirme Projesi 2\"\n\t},\n\t{\n\t\"courseID\":21,\n\t\"courseName\":\"Mobil Uygulama Geliştirme\"\n\t},\n\t{\n\t\"courseID\":27,\n\t\"courseName\":\"Büyük Veri Analitiği\"\n\t}\n  },\n  {\n\t\"studentID\":10007,\n\t\"firstname\":\"Ali\",\n\t\"lastname\":\"Şahin\",\n\t\"email\":\"ali.sahin@ogr.ktu.edu.tr\",\n\t\"advisor\":{\n\t\t\"fullname\":\"Doç. Dr. Hacer Özyurt\",\n\t\t\"title\":\"\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\"\n\t},\n\t\"courses\":[\n\t{\n\t\"courseID\":3,\n\t\"courseName\":\"Bilgisayar Mimarisi ve Organizasyonu\"\n\t},\n\t{\n\t\"courseID\":9,\n\t\"courseName\":\"Yazılım Mühendisliği Prensipleri\"\n\t},\n\t\"courseID\":15,\n\t\"courseName\":\"Bitirme Projesi 2\"\n\t},\n\t{\n\t\"courseID\":21,\n\t\"courseName\":\"Mobil Uygulama Geliştirme\"\n\t},\n\t{\n\t\"courseID\":27,\n\t\"courseName\":\"Büyük Veri Analitiği\"\n\t}\n  },\n  {\n\t\"studentID\":10008,\n\t\"firstname\":\"Zeynep\",\n\t\"lastname\":\"Turan\",\n\t\"email\":\"zeynep.turan@ogr.ktu.edu.tr\",\n\t\"advisor\":{\n\t\t\"fullname\":\"Doç. Dr. Hacer Özyurt\",\n\t\t\"title\":\"\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\"\n\t},\n\t\"courses\":[\n\t{\n\t\"courseID\":3,\n\t\"courseName\":\"Bilgisayar Mimarisi ve Organizasyonu\"\n\t},\n\t{\n\t\"courseID\":9,\n\t\"courseName\":\"Yazılım Mühendisliği Prensipleri\"\n\t},\n\t\"courseID\":15,\n\t\"courseName\":\"Bitirme Projesi 2\"\n\t},\n\t{\n\t\"courseID\":21,\n\t\"courseName\":\"Mobil Uygulama Geliştirme\"\n\t},\n\t{\n\t\"courseID\":27,\n\t\"courseName\":\"Büyük Veri Analitiği\"\n\t}\n  },\n{\n\t\"studentID\":10009,\n\t\"firstname\":\"Can\",\n\t\"lastname\":\"Öztürk\",\n\t\"email\":\"can.ozturk@ogr.ktu.edu.tr\",\n\t\"advisor\":{\n\t\t\"fullname\":\"Dr. Öğr. Üyesi Eyüp Gedikli\",\n\t\t\"title\":\"\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\"\n\t},\n\t\"courses\":[\n\t{\n\t\"courseID\":4,\n\t\"courseName\":\"Bilgisayar Ağları\"\n\t},\n\t{\n\t\"courseID\":10,\n\t\"courseName\":\"Yazılım Test ve Kalite Güvencesi\"\n\t},\n\t\"courseID\":16,\n\t\"courseName\":\"Mikroişlemciler ve Gömülü Sistemler\"\n\t},\n\t{\n\t\"courseID\":22,\n\t\"courseName\":\"Makine Öğrenmesi\"\n\t},\n\t{\n\t\"courseID\":28,\n\t\"courseName\":\"Blockchain Teknolojileri\"\n\t}\n  },\n  {\n\t\"studentID\":10010,\n\t\"firstname\":\"Merve\",\n\t\"lastname\":\"Aksoy\",\n\t\"email\":\"merve.aksoy@ogr.ktu.edu.tr\",\n\t\"advisor\":{\n\t\t\"fullname\":\"Dr. Öğr. Üyesi Eyüp Gedikli\",\n\t\t\"title\":\"\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\"\n\t},\n\t\"courses\":[\n\t{\n\t\"courseID\":4,\n\t\"courseName\":\"Bilgisayar Ağları\"\n\t},\n\t{\n\t\"courseID\":10,\n\t\"courseName\":\"Yazılım Test ve Kalite Güvencesi\"\n\t},\n\t\"courseID\":16,\n\t\"courseName\":\"Mikroişlemciler ve Gömülü Sistemler\"\n\t},\n\t{\n\t\"courseID\":22,\n\t\"courseName\":\"Makine Öğrenmesi\"\n\t},\n\t{\n\t\"courseID\":28,\n\t\"courseName\":\"Blockchain Teknolojileri\"\n\t}\n  },\n  {\n\t\"studentID\":10011,\n\t\"firstname\":\"Efe\",\n\t\"lastname\":\"Güneş\",\n\t\"email\":\"efe.gunes@ogr.ktu.edu.tr\",\n\t\"advisor\":{\n\t\t\"fullname\":\"Dr. Öğr. Üyesi Eyüp Gedikli\",\n\t\t\"title\":\"\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\"\n\t},\n\t\"courses\":[\n\t{\n\t\"courseID\":4,\n\t\"courseName\":\"Bilgisayar Ağları\"\n\t},\n\t{\n\t\"courseID\":10,\n\t\"courseName\":\"Yazılım Test ve Kalite Güvencesi\"\t\n\t},\n\t\"courseID\":16,\n\t\"courseName\":\"Mikroişlemciler ve Gömülü Sistemler\"\n\t},\n\t{\n\t\"courseID\":22,\n\t\"courseName\":\"Makine Öğrenmesi\"\n\t},\n\t{\n\t\"courseID\":28,\n\t\"courseName\":\"Blockchain Teknolojileri\"\n\t}\n  },\n  {\n\t\"studentID\":10012,\n\t\"firstname\":\"Selin\",\n\t\"lastname\":\"Bulut\",\n\t\"email\":\"selin.bulut@ogr.ktu.edu.tr\",\n\t\"advisor\":{\n\t\t\"fullname\":\"Dr. Öğr. Üyesi Eyüp Gedikli\",\n\t\t\"title\":\"\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\"\n\t},\n\t\"courses\":[\n\t{\n\t\"courseID\":4,\n\t\"courseName\":\"Bilgisayar Ağları\"\n\t},\n\t{\n\t\"courseID\":10,\n\t\"courseName\":\"Yazılım Test ve Kalite Güvencesi\"\t\n\t},\n\t\"courseID\":16,\n\t\"courseName\":\"Mikroişlemciler ve Gömülü Sistemler\"\n\t},\n\t{\n\t\"courseID\":22,\n\t\"courseName\":\"Makine Öğrenmesi\"\n\t},\n\t{\n\t\"courseID\":28,\n\t\"courseName\":\"Blockchain Teknolojileri\"\n\t}\n  },\n  {\n\t\"studentID\":10013,\n\t\"firstname\":\"Onur\",\n\t\"lastname\":\"Kurt\",\n\t\"email\":\"onur.kurt@ogr.ktu.edu.tr\",\n\t\"advisor\":{\n\t\t\"fullname\":\"Öğr. Gör. Dr. Celal Atalar\",\n\t\t\"title\":\"Bölüm Başkan Yardımcısı\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\"\n\t},\n\t\"courses\":[\n\t{\n\t\"courseID\":5,\n\t\"courseName\":\"Nesneye Yönelik Programlama\"\n\t},\n\t{\n\t\"courseID\":11,\n\t\"courseName\":\"İnsan-Bigisayar Etkileşimi\"\t\n\t},\n\t\"courseID\":14,\n\t\"courseName\":\"Bitirme Projesi 1\"\n\t},\n\t{\n\t\"courseID\":17,\n\t\"courseName\":\"Sayısal Mantık Tasarımı\"\n\t},\n\t{\n\t\"courseID\":23,\n\t\"courseName\":\"Yapay Zeka\"\n\t},\n\t{\n\t\"courseID\":29,\n\t\"courseName\":\"Siber Güvenlik\"\n\t}\n\n  },\n  {\n\t\"studentID\":10014,\n\t\"firstname\":\"Gizem\",\n\t\"lastname\":\"Aydın\",\n\t\"email\":\"gizem.aydin@ogr.ktu.edu.tr\",\n\t\"advisor\":{\n\t\t\"fullname\":\"Öğr. Gör. Dr. Celal Atalar\",\n\t\t\"title\":\"Bölüm Başkan Yardımcısı\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\"\n\t},\n\t\"courses\":[\n\t{\n\t\"courseID\":5,\n\t\"courseName\":\"Nesneye Yönelik Programlama\"\n\t},\n\t{\n\t\"courseID\":11,\n\t\"courseName\":\"İnsan-Bigisayar Etkileşimi\"\t\n\t},\n\t\"courseID\":14,\n\t\"courseName\":\"Bitirme Projesi 1\"\n\t},\n\t{\n\t\"courseID\":17,\n\t\"courseName\":\"Sayısal Mantık Tasarımı\"\n\t},\n\t{\n\t\"courseID\":23,\n\t\"courseName\":\"Yapay Zeka\"\n\t},\n\t{\n\t\"courseID\":29,\n\t\"courseName\":\"Siber Güvenlik\"\n\t}\n\n  },\n  {\n\t\"studentID\":10015,\n\t\"firstname\":\"Furkan\",\n\t\"lastname\":\"Boz\",\n\t\"email\":\"furkan.boz@ogr.ktu.edu.tr\",\n\t\"advisor\":{\n\t\t\"fullname\":\"Öğr. Gör. Dr. Celal Atalar\",\n\t\t\"title\":\"Bölüm Başkan Yardımcısı\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\"\n\t},\n\t\"courses\":[\n\t{\n\t\"courseID\":5,\n\t\"courseName\":\"Nesneye Yönelik Programlama\"\n\t},\n\t{\n\t\"courseID\":11,\n\t\"courseName\":\"İnsan-Bigisayar Etkileşimi\"\t\n\t},\n\t\"courseID\":14,\n\t\"courseName\":\"Bitirme Projesi 1\"\n\t},\n\t{\n\t\"courseID\":17,\n\t\"courseName\":\"Sayısal Mantık Tasarımı\"\n\t},\n\t{\n\t\"courseID\":23,\n\t\"courseName\":\"Yapay Zeka\"\n\t},\n\t{\n\t\"courseID\":29,\n\t\"courseName\":\"Siber Güvenlik\"\n\t}\n\n  },\n  {\n\t\"studentID\":10016,\n\t\"firstname\":\"Ceren\",\n\t\"lastname\":\"Erdoğan\",\n\t\"email\":\"ceren.erdogan@ogr.ktu.edu.tr\",\n\t\"advisor\":{\n\t\t\"fullname\":\"Öğr. Gör. Dr. Celal Atalar\",\n\t\t\"title\":\"Bölüm Başkan Yardımcısı\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\"\n\t},\n\t\"courses\":[\n\t{\n\t\"courseID\":5,\n\t\"courseName\":\"Nesneye Yönelik Programlama\"\n\t},\n\t{\n\t\"courseID\":11,\n\t\"courseName\":\"İnsan-Bigisayar Etkileşimi\"\t\n\t},\n\t\"courseID\":14,\n\t\"courseName\":\"Bitirme Projesi 1\"\n\t},\n\t{\n\t\"courseID\":17,\n\t\"courseName\":\"Sayısal Mantık Tasarımı\"\n\t},\n\t{\n\t\"courseID\":23,\n\t\"courseName\":\"Yapay Zeka\"\n\t},\n\t{\n\t\"courseID\":29,\n\t\"courseName\":\"Siber Güvenlik\"\n\t}\n\n  },\n  {\n\t\"studentID\":10017,\n\t\"firstname\":\"Burak\",\n\t\"lastname\":\"Tan\",\n\t\"email\":\"burak.tan@ogr.ktu.edu.tr\",\n\t\"advisor\":{\n\t\t\"fullname\":\"Öğr. Gör. Dr. Selda Atalar\",\n\t\t\"title\":\"\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\"\n\t},\n\t\"courses\":[\n\t{\n\t\"courseID\":6,\n\t\"courseName\":\"Veri Yapıları ve Algoritmalar\"\n\t},\n\t{\n\t\"courseID\":12,\n\t\"courseName\":\"Veri İletişimi ve Ağ Güvenliği\"\t\n\t},\n\t\"courseID\":14,\n\t\"courseName\":\"Bitirme Projesi 1\"\n\t},\n\t{\n\t\"courseID\":18,\n\t\"courseName\":\"Yazılım Gereksinim Mühendisliği\"\n\t},\n\t{\n\t\"courseID\":24,\n\t\"courseName\":\"Web Programlama\"\n\t}\n  },\n  {\n\t\"studentID\":10018,\n\t\"firstname\":\"Melis\",\n\t\"lastname\":\"Durmaz\",\n\t\"email\":\"melis.durmaz@ogr.ktu.edu.tr\",\n\t\"advisor\":{\n\t\t\"fullname\":\"Öğr. Gör. Dr. Selda Atalar\",\n\t\t\"title\":\"\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\"\n\t},\n\t\"courses\":[\n\t{\n\t\"courseID\":6,\n\t\"courseName\":\"Veri Yapıları ve Algoritmalar\"\n\t},\n\t{\n\t\"courseID\":12,\n\t\"courseName\":\"Veri İletişimi ve Ağ Güvenliği\"\t\n\t},\n\t\"courseID\":14,\n\t\"courseName\":\"Bitirme Projesi 1\"\n\t},\n\t{\n\t\"courseID\":18,\n\t\"courseName\":\"Yazılım Gereksinim Mühendisliği\"\n\t},\n\t{\n\t\"courseID\":24,\n\t\"courseName\":\"Web Programlama\"\n\t}\t\n  },\n  {\n\t\"studentID\":10019,\n\t\"firstname\":\"Okan\",\n\t\"lastname\":\"Yıldırım\",\n\t\"email\":\"okan.yildirim@ogr.ktu.edu.tr\",\n\t\"advisor\":{\n\t\t\"fullname\":\"Öğr. Gör. Dr. Selda Atalar\",\n\t\t\"title\":\"\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\"\n\t},\n\t\"courses\":[\n\t{\n\t\"courseID\":6,\n\t\"courseName\":\"Veri Yapıları ve Algoritmalar\"\n\t},\n\t{\n\t\"courseID\":12,\n\t\"courseName\":\"Veri İletişimi ve Ağ Güvenliği\"\t\n\t},\n\t\"courseID\":15,\n\t\"courseName\":\"Bitirme Projesi 2\"\n\t},\n\t{\n\t\"courseID\":18,\n\t\"courseName\":\"Yazılım Gereksinim Mühendisliği\"\n\t},\n\t{\n\t\"courseID\":24,\n\t\"courseName\":\"Web Programlama\"\n\t}\n  },\n  {\n\t\"studentID\":10020,\n\t\"firstname\":\"Eylül\",\n\t\"lastname\":\"Akkaya\",\n\t\"email\":\"eylul.akkaya@ogr.ktu.edu.tr\",\n\t\"advisor\":{\n\t\t\"fullname\":\"Öğr. Gör. Dr. Selda Atalar\",\n\t\t\"title\":\"\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\"\n\t},\n\t\"courses\":[\n\t{\n\t\"courseID\":6,\n\t\"courseName\":\"Veri Yapıları ve Algoritmalar\"\n\t},\n\t{\n\t\"courseID\":12,\n\t\"courseName\":\"Veri İletişimi ve Ağ Güvenliği\"\t\n\t},\n\t\"courseID\":15,\n\t\"courseName\":\"Bitirme Projesi 2\"\n\t},\n\t{\n\t\"courseID\":18,\n\t\"courseName\":\"Yazılım Gereksinim Mühendisliği\"\n\t},\n\t{\n\t\"courseID\":24,\n\t\"courseName\":\"Web Programlama\"\n\t}\n  },\n{\n\t\"studentID\":10021,\n\t\"firstname\":\"Berat\",\n\t\"lastname\":\"Taş\",\n\t\"email\":\"berat.tas@ogr.ktu.edu.tr\",\n\t\"advisor\":{\n\t\t\"fullname\":\"Arş. Gör. Dr. Sefa Aras\",\n\t\t\"title\":\"\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\"\n\t},\n\t\"courses\":[\n\t{\n\t\"courseID\":7,\n\t\"courseName\":\"Matematiksel Modelleme ve Simülasyon\"\n\t},\n\t{\n\t\"courseID\":13,\n\t\"courseName\":\"Yazılım Projesi Yönetimi\"\t\n\t},\n\t\"courseID\":15,\n\t\"courseName\":\"Bitirme Projesi 2\"\n\t},\n\t{\n\t\"courseID\":19,\n\t\"courseName\":\"Sistem Analizi ve Tasarımı\"\n\t},\n\t{\n\t\"\"courseID\":25,\n\t\"courseName\":\"Bulut Bilişim\"\n\t}\n  },\n  {\n\t\"studentID\":10022,\n\t\"firstname\":\"Damla\",\n\t\"lastname\":\"Karaca,\n\t\"email\":\"damla.karaca@ogr.ktu.edu.tr\",\n\t\"advisor\":{\n\t\t\"fullname\":\"Arş. Gör. Dr. Sefa Aras\",\n\t\t\"title\":\"\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\"\n\t},\n\t\"courses\":[\n\t{\n\t\"courseID\":7,\n\t\"courseName\":\"Matematiksel Modelleme ve Simülasyon\"\n\t},\n\t{\n\t\"courseID\":13,\n\t\"courseName\":\"Yazılım Projesi Yönetimi\"\t\n\t},\n\t\"courseID\":15,\n\t\"courseName\":\"Bitirme Projesi 2\"\n\t},\n\t{\n\t\"courseID\":19,\n\t\"courseName\":\"Sistem Analizi ve Tasarımı\"\n\t},\n\t{\n\t\"\"courseID\":25,\n\t\"courseName\":\"Bulut Bilişim\"\n\t}\n  },\n  {\n\t\"studentID\":10023,\n\t\"firstname\":\"Kerem\",\n\t\"lastname\":\"Kara\",\n\t\"email\":\"kerem.kara@ogr.ktu.edu.tr\",\n\t\"advisor\":{\n\t\t\"fullname\":\"Arş. Gör. Dr. Sefa Aras\",\n\t\t\"title\":\"\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\"\n\t},\n\t\"courses\":[\n\t{\n\t\"courseID\":7,\n\t\"courseName\":\"Matematiksel Modelleme ve Simülasyon\"\n\t},\n\t{\n\t\"courseID\":13,\n\t\"courseName\":\"Yazılım Projesi Yönetimi\"\t\n\t},\n\t\"courseID\":15,\n\t\"courseName\":\"Bitirme Projesi 2\"\n\t},\n\t{\n\t\"courseID\":19,\n\t\"courseName\":\"Sistem Analizi ve Tasarımı\"\n\t},\n\t{\n\t\"\"courseID\":25,\n\t\"courseName\":\"Bulut Bilişim\"\n\t}\n  },\n  {\n\t\"studentID\":10024,\n\t\"firstname\":\"Deniz\",\n\t\"lastname\":\"Erdem\",\n\t\"email\":\"deniz.erdem@ogr.ktu.edu.tr\",\n\t\"advisor\":{\n\t\t\"fullname\":\"Arş. Gör. Dr. Sefa Aras\",\n\t\t\"title\":\"\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\"\n\t},\n\t\"courses\":[\n\t{\n\t\"courseID\":7,\n\t\"courseName\":\"Matematiksel Modelleme ve Simülasyon\"\n\t},\n\t{\n\t\"courseID\":13,\n\t\"courseName\":\"Yazılım Projesi Yönetimi\"\t\n\t},\n\t\"courseID\":15,\n\t\"courseName\":\"Bitirme Projesi 2\"\n\t},\n\t{\n\t\"courseID\":19,\n\t\"courseName\":\"Sistem Analizi ve Tasarımı\"\n\t},\n\t{\n\t\"\"courseID\":25,\n\t\"courseName\":\"Bulut Bilişim\"\n\t}\n  }\n\n\n\n]\n"
+				}
+			]
+		},
+		{
+			"name": "api/Students",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/Students",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"Students"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/Students",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Students"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"studentID\": 10025,\n        \"firstname\": \"Fatmanur\",\n        \"lastname\": \"Akdemir\",\n        \"email\": \"fatmanur.akdemir@ogr.ktu.edu.tr\",\n        \"advisor\": {},\n        \"courses\": []\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "api/Students/{id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/Students/{id}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"Students",
+						"{id}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/Students/{id}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Students",
+								"{id}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n{\n\t\"studentID\":10021,\n\t\"firstname\":\"Berat\",\n\t\"lastname\":\"Taş\",\n\t\"email\":\"berat.tas@ogr.ktu.edu.tr\",\n\t\"advisor\":{\n\t\t\"fullname\":\"Arş. Gör. Dr. Sefa Aras\",\n\t\t\"title\":\"\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\"\n\t},\n\t\"courses\":[\n\t{\n\t\"courseID\":7,\n\t\"courseName\":\"Matematiksel Modelleme ve Simülasyon\"\n\t},\n\t{\n\t\"courseID\":13,\n\t\"courseName\":\"Yazılım Projesi Yönetimi\"\t\n\t},\n\t\"courseID\":15,\n\t\"courseName\":\"Bitirme Projesi 2\"\n\t},\n\t{\n\t\"courseID\":19,\n\t\"courseName\":\"Sistem Analizi ve Tasarımı\"\n\t},\n\t{\n\t\"\"courseID\":25,\n\t\"courseName\":\"Bulut Bilişim\"\n\t}\n  }\n]\n"
+				}
+			]
+		},
+		{
+			"name": "api/Students/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/Students/{id}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"Students",
+						"{id}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/Students/{id}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Students",
+								"{id}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n{\n\t\"studentID\":10026,\n\t\"firstname\":\"Berat\",\n\t\"lastname\":\"Taş\",\n\t\"email\":\"berat.tas@ogr.ktu.edu.tr\",\n\t\"advisor\":{\n\t\t\"fullname\":\"Arş. Gör. Dr. Sefa Aras\",\n\t\t\"title\":\"\"\t\t\n\t\t\"department\":\"Yazılım Mühendisliği Bölümü\"\n\t},\n\t\"courses\":[\n\t{\n\t\"courseID\":7,\n\t\"courseName\":\"Matematiksel Modelleme ve Simülasyon\"\n\t},\n\t{\n\t\"courseID\":13,\n\t\"courseName\":\"Yazılım Projesi Yönetimi\"\t\n\t},\n\t\"courseID\":15,\n\t\"courseName\":\"Bitirme Projesi 2\"\n\t},\n\t{\n\t\"courseID\":19,\n\t\"courseName\":\"Sistem Analizi ve Tasarımı\"\n\t},\n\t{\n\t\"\"courseID\":25,\n\t\"courseName\":\"Bulut Bilişim\"\n\t}\n  }\n]\n"
+				}
+			]
+		},
+		{
+			"name": "api/Students/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/Students/{id}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"Students",
+						"{id}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/Students/{id}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Students",
+								"{id}"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "api/Courses",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/Courses",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"Courses"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/Courses",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Courses"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n\t{\n\t  \"courseID\":1,\n\t  \"courseCode\":\"YAZ101\",\n\t  \"courseName\":\"Algoritma ve Programlama\",\n\t  \"isMandatory\":true,\n\t  \"credit\":4,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10001\n\t\t},\n\t\t{\n\t\t  \"studentID\":10002\n\t\t},\n\t\t{\n\t\t  \"studentID\":10003\n\t\t},\n\t\t{\n\t\t  \"studentID\":10004\n\t\t}\n\n\t]\n\t},\n\t{\n\t  \"courseID\":2,\n\t  \"courseCode\":\"YAZ102\",\n\t  \"courseName\":\"Veritabanı Yönetim Sistemleri\",\n\t  \"isMandatory\":true,\n\t  \"credit\":4,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10001\n\t\t},\n\t\t{\n\t\t  \"studentID\":10002\n\t\t},\n\t\t{\n\t\t  \"studentID\":10003\n\t\t},\n\t\t{\n\t\t  \"studentID\":10004\n\t\t}\n\n\t]\n\t},\n\t{\n\t  \"courseID\":3,\n\t  \"courseCode\":\"YAZ103\",\n\t  \"courseName\":\"Bilgisayar Mimarisi ve Organizasyonu\",\n\t  \"isMandatory\":true,\n\t  \"credit\":4,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10005\n\t\t},\n\t\t{\n\t\t  \"studentID\":10006\n\t\t},\n\t\t{\n\t\t  \"studentID\":10007\n\t\t},\n\t\t{\n\t\t  \"studentID\":10008\n\t\t}\n\n\t]\n\t},\n\t{\n\t  \"courseID\":4,\n\t  \"courseCode\":\"YAZ104\",\n\t  \"courseName\":\"Bilgisayar Ağları\",\n\t  \"isMandatory\":true,\n\t  \"credit\":4,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10009\n\t\t},\n\t\t{\n\t\t  \"studentID\":10010\n\t\t},\n\t\t{\n\t\t  \"studentID\":10011\n\t\t},\n\t\t{\n\t\t  \"studentID\":10012\n\t\t}\n\n\t]\n\t},\n\n\t{\n\t  \"courseID\":5,\n\t  \"courseCode\":\"YAZ201\",\n\t  \"courseName\":\"Nesneye Yönelik Programlama\",\n\t  \"isMandatory\":true,\n\t  \"credit\":4,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10013\n\t\t},\n\t\t{\n\t\t  \"studentID\":10014\n\t\t},\n\t\t{\n\t\t  \"studentID\":10015\n\t\t},\n\t\t{\n\t\t  \"studentID\":10016\n\t\t}\n\n\t]\n\t},\n\t{\n\t  \"courseID\":6,\n\t  \"courseCode\":\"YAZ202\",\n\t  \"courseName\":\"Veri Yapıları ve Algoritmalar\",\n\t  \"isMandatory\":true,\n\t  \"credit\":4,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10017\n\t\t},\n\t\t{\n\t\t  \"studentID\":10018\n\t\t},\n\t\t{\n\t\t  \"studentID\":10019\n\t\t},\n\t\t{\n\t\t  \"studentID\":10020\n\t\t}\n\n\t]\n\t},\n\t{\n\t  \"courseID\":7,\n\t  \"courseCode\":\"YAZ203\",\n\t  \"courseName\":\"Matematiksel Modelleme ve Simülasyon\",\n\t  \"isMandatory\":true,\n\t  \"credit\":3,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10021\n\t\t},\n\t\t{\n\t\t  \"studentID\":10022\n\t\t},\n\t\t{\n\t\t  \"studentID\":10023\n\t\t},\n\t\t{\n\t\t  \"studentID\":10024\n\t\t}\n\n\t]\n\t},\n\t{\n\t  \"courseID\":8,\n\t  \"courseCode\":\"YAZ204\",\n\t  \"courseName\":\"İşletim Sistemleri\",\n\t  \"isMandatory\":true,\n\t  \"credit\":4,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10001\n\t\t},\n\t\t{\n\t\t  \"studentID\":10002\n\t\t},\n\t\t{\n\t\t  \"studentID\":10003\n\t\t},\n\t\t{\n\t\t  \"studentID\":10004\n\t\t}\n\n\t]\n\t},\n\t{\n\t  \"courseID\":9,\n\t  \"courseCode\":\"YAZ301\",\n\t  \"courseName\":\"Yazılım Mühendisliği Prensipleri\",\n\t  \"isMandatory\":true,\n\t  \"credit\":3,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10005\n\t\t},\n\t\t{\n\t\t  \"studentID\":10006\n\t\t},\n\t\t{\n\t\t  \"studentID\":10007\n\t\t},\n\t\t{\n\t\t  \"studentID\":10008\n\t\t}\n\n\t]\n\t},\n\t{\n\t  \"courseID\":10,\n\t  \"courseCode\":\"YAZ302\",\n\t  \"courseName\":\"Yazılım Test ve Kalite Güvencesi\",\n\t  \"isMandatory\":true,\n\t  \"credit\":3,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10009\n\t\t},\n\t\t{\n\t\t  \"studentID\":10010\n\t\t},\n\t\t{\n\t\t  \"studentID\":10011\n\t\t},\n\t\t{\n\t\t  \"studentID\":10012\n\t\t}\n\n\t]\n\t},\n\t{\n\t  \"courseID\":11,\n\t  \"courseCode\":\"YAZ303\",\n\t  \"courseName\":\"İnsan-Bigisayar Etkileşimi\",\n\t  \"isMandatory\":true,\n\t  \"credit\":3,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10013\n\t\t},\n\t\t{\n\t\t  \"studentID\":10014\n\t\t},\n\t\t{\n\t\t  \"studentID\":10015\n\t\t},\n\t\t{\n\t\t  \"studentID\":10016\n\t\t}\n\n\t]\n\t},\n\t{\n\t  \"courseID\":12,\n\t  \"courseCode\":\"YAZ304\",\n\t  \"courseName\":\"Veri İletişimi ve Ağ Güvenliği\",\n\t  \"isMandatory\":true,\n\t  \"credit\":3,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10017\n\t\t},\n\t\t{\n\t\t  \"studentID\":10018\n\t\t},\n\t\t{\n\t\t  \"studentID\":10019\n\t\t},\n\t\t{\n\t\t  \"studentID\":10020\n\t\t}\n\n\t]\n\t},\n\t{\n\t  \"courseID\":13,\n\t  \"courseCode\":\"YAZ401\",\n\t  \"courseName\":\"Yazılım Projesi Yönetimi\",\n\t  \"isMandatory\":true,\n\t  \"credit\":3,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10021\n\t\t},\n\t\t{\n\t\t  \"studentID\":10022\n\t\t},\n\t\t{\n\t\t  \"studentID\":10023\n\t\t},\n\t\t{\n\t\t  \"studentID\":10024\n\t\t}\n\n\t]\n\t},\n\t{\n\t  \"courseID\":14,\n\t  \"courseCode\":\"YAZ202\",\n\t  \"courseName\":\"Bitirme Projesi 1\",\n\t  \"isMandatory\":true,\n\t  \"credit\":6,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10001\n\t\t},\n\t\t{\n\t\t  \"studentID\":10002\n\t\t},\n\t\t{\n\t\t  \"studentID\":10003\n\t\t},\n\t\t{\n\t\t  \"studentID\":10004\n\t\t},\n\t\t{\n\t\t  \"studentID\":10013\n\t\t},\n\t\t{\n\t\t  \"studentID\":10014\n\t\t},\n\t\t{\n\t\t  \"studentID\":10015\n\t\t},\n\t\t{\n\t\t  \"studentID\":10016\n\t\t},\n\t\t{\n\t\t  \"studentID\":10017\n\t\t},\n\t\t{\n\t\t  \"studentID\":10018\n\t\t}\n\n\n\n\t]\n\t},\n\t{\n\t  \"courseID\":15,\n\t  \"courseCode\":\"YAZ403\",\n\t  \"courseName\":\"Bitirme Projesi 2\",\n\t  \"isMandatory\":true,\n\t  \"credit\":6,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10005\n\t\t},\n\t\t{\n\t\t  \"studentID\":10006\n\t\t},\n\t\t{\n\t\t  \"studentID\":10007\n\t\t},\n\t\t{\n\t\t  \"studentID\":10008\n\t\t},\n\t\t{\n\t\t  \"studentID\":10019\n\t\t},\n\t\t{\n\t\t  \"studentID\":10020\n\t\t},\n\t\t{\n\t\t  \"studentID\":10021\n\t\t},\n\t\t{\n\t\t  \"studentID\":10022\n\t\t},\n\t\t{\n\t\t  \"studentID\":10023\n\t\t},\n\t\t{\n\t\t  \"studentID\":10024\n\t\t}\n\n\n\t]\n\t},\n\t{\n\t  \"courseID\":16,\n\t  \"courseCode\":\"YAZ404\",\n\t  \"courseName\":\"Mikroişlemciler ve Gömülü Sistemler\",\n\t  \"isMandatory\":true,\n\t  \"credit\":4,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10009\n\t\t},\n\t\t{\n\t\t  \"studentID\":10010\n\t\t},\n\t\t{\n\t\t  \"studentID\":10011\n\t\t},\n\t\t{\n\t\t  \"studentID\":10012\n\t\t}\n\n\t]\n\t},\n\t{\n\t  \"courseID\":17,\n\t  \"courseCode\":\"YAZ405\",\n\t  \"courseName\":\"Sayısal Mantık Tasarımı\",\n\t  \"isMandatory\":true,\n\t  \"credit\":4,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10013\n\t\t},\n\t\t{\n\t\t  \"studentID\":10014\n\t\t},\n\t\t{\n\t\t  \"studentID\":10015\n\t\t},\n\t\t{\n\t\t  \"studentID\":10016\n\t\t}\n\n\t]\n\t},\n\t{\n\t  \"courseID\":18,\n\t  \"courseCode\":\"YAZ406\",\n\t  \"courseName\":\"Yazılım Gereksinim Mühendisliği\",\n\t  \"isMandatory\":true,\n\t  \"credit\":3,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10017\n\t\t},\n\t\t{\n\t\t  \"studentID\":10018\n\t\t},\n\t\t{\n\t\t  \"studentID\":10019\n\t\t},\n\t\t{\n\t\t  \"studentID\":10020\n\t\t}\n\n\t]\n\t},\n\t{\n\t  \"courseID\":19,\n\t  \"courseCode\":\"YAZ407\",\n\t  \"courseName\":\"Sistem Analizi ve Tasarımı\",\n\t  \"isMandatory\":true,\n\t  \"credit\":3,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10021\n\t\t},\n\t\t{\n\t\t  \"studentID\":10022\n\t\t},\n\t\t{\n\t\t  \"studentID\":10023\n\t\t},\n\t\t{\n\t\t  \"studentID\":10024\n\t\t}\n\n\t]\n\t},\n\t{\n\t  \"courseID\":20,\n\t  \"courseCode\":\"YAZ408\",\n\t  \"courseName\":\"Bulut Tabanlı Yazılım Geliştirme\",\n\t  \"isMandatory\":true,\n\t  \"credit\":4,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10001\n\t\t},\n\t\t{\n\t\t  \"studentID\":10002\n\t\t},\n\t\t{\n\t\t  \"studentID\":10003\n\t\t},\n\t\t{\n\t\t  \"studentID\":10004\n\t\t}\n\n\t]\n\t},\n\t{\n\t  \"courseID\":21,\n\t  \"courseCode\":\"YAZE101\",\n\t  \"courseName\":\"Mobil Uygulama Geliştirme\",\n\t  \"isMandatory\":false,\n\t  \"credit\":3,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10005\n\t\t},\n\t\t{\n\t\t  \"studentID\":10006\n\t\t},\n\t\t{\n\t\t  \"studentID\":10007\n\t\t},\n\t\t{\n\t\t  \"studentID\":10008\n\t\t}\n\n\t]\n\t},\n\t{\n\t  \"courseID\":22,\n\t  \"courseCode\":\"YAZE102\",\n\t  \"courseName\":\"Makine Öğrenmesi\",\n\t  \"isMandatory\":false,\n\t  \"credit\":3,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10009\n\t\t},\n\t\t{\n\t\t  \"studentID\":10010\n\t\t},\n\t\t{\n\t\t  \"studentID\":10011\n\t\t},\n\t\t{\n\t\t  \"studentID\":10012\n\t\t}\n\n\t]\n\t},\n\t{\n\t  \"courseID\":23,\n\t  \"courseCode\":\"YAZE103\",\n\t  \"courseName\":\"Yapay Zeka\",\n\t  \"isMandatory\":false,\n\t  \"credit\":3,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10013\n\t\t},\n\t\t{\n\t\t  \"studentID\":10014\n\t\t},\n\t\t{\n\t\t  \"studentID\":10015\n\t\t},\n\t\t{\n\t\t  \"studentID\":10016\n\t\t}\n\n\t]\n\t},\n\t{\n\t  \"courseID\":24,\n\t  \"courseCode\":\"YAZE201\",\n\t  \"courseName\":\"Web Programlama\",\n\t  \"isMandatory\":false,\n\t  \"credit\":3,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10017\n\t\t},\n\t\t{\n\t\t  \"studentID\":10018\n\t\t},\n\t\t{\n\t\t  \"studentID\":10019\n\t\t},\n\t\t{\n\t\t  \"studentID\":10020\n\t\t}\n\n\t]\n\t},\n\t{\n\t  \"courseID\":25,\n\t  \"courseCode\":\"YAZE202\",\n\t  \"courseName\":\"Bulut Bilişim\",\n\t  \"isMandatory\":false,\n\t  \"credit\":3,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10021\n\t\t},\n\t\t{\n\t\t  \"studentID\":10022\n\t\t},\n\t\t{\n\t\t  \"studentID\":10023\n\t\t},\n\t\t{\n\t\t  \"studentID\":10024\n\t\t}\n\n\t]\n\t},\n\t{\n\t  \"courseID\":26,\n\t  \"courseCode\":\"YAZE301\",\n\t  \"courseName\":\"IoT Uygulamaları\",\n\t  \"isMandatory\":false,\n\t  \"credit\":3,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10001\n\t\t},\n\t\t{\n\t\t  \"studentID\":10002\n\t\t},\n\t\t{\n\t\t  \"studentID\":10003\n\t\t},\n\t\t{\n\t\t  \"studentID\":10004\n\t\t}\n\n\t]\n\t},\n\t{\n\t  \"courseID\":27,\n\t  \"courseCode\":\"YAZE302\",\n\t  \"courseName\":\"Büyük Veri Analitiği\",\n\t  \"isMandatory\":false,\n\t  \"credit\":3,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10005\n\t\t},\n\t\t{\n\t\t  \"studentID\":10006\n\t\t},\n\t\t{\n\t\t  \"studentID\":10007\n\t\t},\n\t\t{\n\t\t  \"studentID\":10008\n\t\t}\n\n\t]\n\t},\n\t{\n\t  \"courseID\":28,\n\t  \"courseCode\":\"YAZE401\",\n\t  \"courseName\":\"Blockchain Teknolojileri\",\n\t  \"isMandatory\":false,\n\t  \"credit\":3,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10009\n\t\t},\n\t\t{\n\t\t  \"studentID\":10010\n\t\t},\n\t\t{\n\t\t  \"studentID\":10011\n\t\t},\n\t\t{\n\t\t  \"studentID\":10012\n\t\t}\n\n\t]\n\t},\n\t{\n\t  \"courseID\":29,\n\t  \"courseCode\":\"YAZE402\",\n\t  \"courseName\":\"Siber Güvenlik\",\n\t  \"isMandatory\":false,\n\t  \"credit\":3,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10013\n\t\t},\n\t\t{\n\t\t  \"studentID\":10014\n\t\t},\n\t\t{\n\t\t  \"studentID\":10015\n\t\t},\n\t\t{\n\t\t  \"studentID\":10016\n\t\t}\n\t]\n\t}\n\t\n\n]\n\n\n\n\n{\n\t  \"courseID\":29,\n\t  \"courseCode\":\"YAZE402\",\n\t  \"courseName\":\"Siber Güvenlik\",\n\t  \"isMandatory\":false,\n\t  \"credit\":3,\n\t  \"department\":\"Yazılım Mühendisliği\",\n\t  \"studentCourseSelections\":\n\t  [\n\t\t{\n\t\t  \"studentID\":10013\n\t\t},\n\t\t{\n\t\t  \"studentID\":10014\n\t\t},\n\t\t{\n\t\t  \"studentID\":10015\n\t\t},\n\t\t{\n\t\t  \"studentID\":10016\n\t\t}\n\t]\n}\n"
+				}
+			]
+		},
+		{
+			"name": "api/Courses",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/Courses",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"Courses"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/Courses",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Courses"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"courseID\": 20,\n        \"courseCode\": \"YAZ4000\",\n        \"courseName\": \"Bulut Tabanlı Yazılım Geliştirme\",\n        \"isMandatory\": true,\n        \"credit\": 4,\n        \"department\": \"Yazılım Mühendisliği\",\n        \"studentCourseSelections\": []\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "api/Courses/{id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/Courses/{id}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"Courses",
+						"{id}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/Courses/{id}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Courses",
+								"{id}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"courseID\": 29,\n        \"courseCode\": \"YAZE402\",\n        \"courseName\": \"Siber Güvenlik\",\n        \"isMandatory\": false,\n        \"credit\": 3,\n        \"department\": \"Yazılım Mühendisliği\",\n        \"studentCourseSelections\": [\n            {\n                \"studentID\": 10013\n            },\n            {\n                \"studentID\": 10014\n            },\n            {\n                \"studentID\": 10015\n            },\n            {\n                \"studentID\": 10016\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "api/Courses/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/Courses/{id}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"Courses",
+						"{id}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/Courses/{id}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Courses",
+								"{id}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"courseID\": 29,\n        \"courseCode\": \"YAZE4020\",\n        \"courseName\": \"Siber Güvenlik\",\n        \"isMandatory\": false,\n        \"credit\": 3,\n        \"department\": \"Yazılım Mühendisliği\",\n        \"studentCourseSelections\": [\n            {\n                \"studentID\": 10013\n            },\n            {\n                \"studentID\": 10014\n            },\n            {\n                \"studentID\": 10015\n            },\n            {\n                \"studentID\": 10016\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "api/Courses/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/Courses/{id}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"Courses",
+						"{id}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/Courses/{id}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Courses",
+								"{id}"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "api/StudentCourseSelection",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/StudentCourseSelection",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"StudentCourseSelection"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/StudentCourseSelection",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"StudentCourseSelection"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n  {\n\t\"studentID\":10001,\n\t\"firstname\":\"Ahmet\",\n\t\"lastname\":\"Yılmaz\",\n\t\"courses\":[\n\t{\n\t\"courseID\":1,\n\t\"courseName\":\"Algoritma ve Programlama\"\n\t},\n\t{\n\t\"courseID\":2,\n\t\"courseName\":\"Veritabanı Yönetim Sistemleri\"\n\t},\n\t{\"courseID\":8,\n\t \"courseName\":\"İşletim Sistemleri\"\n\t},\n\t{\n\t\"courseID\":14,\n        \"courseName\":\"Bitirme Projesi 1\"\n\t},\n\t{\n\t\"courseID\":20,\n\t\"courseName\":\"Bulut Tabanlı Yazılım Geliştirme\"\n\t},\n\t{\n\t\"courseID\":26,\n\t\"courseName\":\"IoT Uygulamaları\"\n\t}\n\n  },\n  {\n\t\"studentID\":10002,\n\t\"firstname\":\"Mehmet\",\n\t\"lastname\":\"Kaya\",\n\t\"courses\":[\n\t{\n\t\"courseID\":1,\n\t\"courseName\":\"Algoritma ve Programlama\"\n\t},\n\t{\n\t\"courseID\":2,\n\t\"courseName\":\"Veritabanı Yönetim Sistemleri\"\n\t},\n\t{\"courseID\":8,\n\t \"courseName\":\"İşletim Sistemleri\"\n\t},\n\t{\n\t\"courseID\":14,\n        \"courseName\":\"Bitirme Projesi 1\"\n\t},\n\t{\n\t\"courseID\":20,\n\t\"courseName\":\"Bulut Tabanlı Yazılım Geliştirme\"\n\t},\n\t{\n\t\"courseID\":26,\n\t\"courseName\":\"IoT Uygulamaları\"\n\t}\n\n  },\n  {\n\t\"studentID\":10003,\n\t\"firstname\":\"Ayşe\",\n\t\"lastname\":\"Demir\",\n\t\"courses\":[\n\t{\n\t\"courseID\":1,\n\t\"courseName\":\"Algoritma ve Programlama\"\n\t},\n\t{\n\t\"courseID\":2,\n\t\"courseName\":\"Veritabanı Yönetim Sistemleri\"\n\t},\n\t{\"courseID\":8,\n\t \"courseName\":\"İşletim Sistemleri\"\n\t},\n\t{\n\t\"courseID\":14,\n        \"courseName\":\"Bitirme Projesi 1\"\n\t},\n\t{\n\t\"courseID\":20,\n\t\"courseName\":\"Bulut Tabanlı Yazılım Geliştirme\"\n\t},\n\t{\n\t\"courseID\":26,\n\t\"courseName\":\"IoT Uygulamaları\"\n\t}\n\n  },\n  {\n\t\"studentID\":10004,\n\t\"firstname\":\"Fatma\",\n\t\"lastname\":\"Çelik\",\n\t\"courses\":[\n\t{\n\t\"courseID\":1,\n\t\"courseName\":\"Algoritma ve Programlama\"\n\t},\n\t{\n\t\"courseID\":2,\n\t\"courseName\":\"Veritabanı Yönetim Sistemleri\"\n\t},\n\t{\"courseID\":8,\n\t \"courseName\":\"İşletim Sistemleri\"\n\t},\n\t{\n\t\"courseID\":14,\n        \"courseName\":\"Bitirme Projesi 1\"\n\t},\n\t{\n\t\"courseID\":20,\n\t\"courseName\":\"Bulut Tabanlı Yazılım Geliştirme\"\n\t},\n\t{\n\t\"courseID\":26,\n\t\"courseName\":\"IoT Uygulamaları\"\n\t}\n\n  },\n  {\n\t\"studentID\":10005,\n\t\"firstname\":\"Emre\",\n\t\"lastname\":\"Arslan\",\n\t\"courses\":[\n\t{\n\t\"courseID\":3,\n\t\"courseName\":\"Bilgisayar Mimarisi ve Organizasyonu\"\n\t},\n\t{\n\t\"courseID\":9,\n\t\"courseName\":\"Yazılım Mühendisliği Prensipleri\"\n\t},\n\t\"courseID\":15,\n\t\"courseName\":\"Bitirme Projesi 2\"\n\t},\n\t{\n\t\"courseID\":21,\n\t\"courseName\":\"Mobil Uygulama Geliştirme\"\n\t},\n\t{\n\t\"courseID\":27,\n\t\"courseName\":\"Büyük Veri Analitiği\"\n\t}\n  },\n  {\n\t\"studentID\":10006,\n\t\"firstname\":\"Elif\",\n\t\"lastname\":\"Koç\",\n\t\"courses\":[\n\t{\n\t\"courseID\":3,\n\t\"courseName\":\"Bilgisayar Mimarisi ve Organizasyonu\"\n\t},\n\t{\n\t\"courseID\":9,\n\t\"courseName\":\"Yazılım Mühendisliği Prensipleri\"\n\t},\n\t\"courseID\":15,\n\t\"courseName\":\"Bitirme Projesi 2\"\n\t},\n\t{\n\t\"courseID\":21,\n\t\"courseName\":\"Mobil Uygulama Geliştirme\"\n\t},\n\t{\n\t\"courseID\":27,\n\t\"courseName\":\"Büyük Veri Analitiği\"\n\t}\n  },\n  {\n\t\"studentID\":10007,\n\t\"firstname\":\"Ali\",\n\t\"lastname\":\"Şahin\",\n\t\"courses\":[\n\t{\n\t\"courseID\":3,\n\t\"courseName\":\"Bilgisayar Mimarisi ve Organizasyonu\"\n\t},\n\t{\n\t\"courseID\":9,\n\t\"courseName\":\"Yazılım Mühendisliği Prensipleri\"\n\t},\n\t\"courseID\":15,\n\t\"courseName\":\"Bitirme Projesi 2\"\n\t},\n\t{\n\t\"courseID\":21,\n\t\"courseName\":\"Mobil Uygulama Geliştirme\"\n\t},\n\t{\n\t\"courseID\":27,\n\t\"courseName\":\"Büyük Veri Analitiği\"\n\t}\n  },\n  {\n\t\"studentID\":10008,\n\t\"firstname\":\"Zeynep\",\n\t\"lastname\":\"Turan\",\n\t\"courses\":[\n\t{\n\t\"courseID\":3,\n\t\"courseName\":\"Bilgisayar Mimarisi ve Organizasyonu\"\n\t},\n\t{\n\t\"courseID\":9,\n\t\"courseName\":\"Yazılım Mühendisliği Prensipleri\"\n\t},\n\t\"courseID\":15,\n\t\"courseName\":\"Bitirme Projesi 2\"\n\t},\n\t{\n\t\"courseID\":21,\n\t\"courseName\":\"Mobil Uygulama Geliştirme\"\n\t},\n\t{\n\t\"courseID\":27,\n\t\"courseName\":\"Büyük Veri Analitiği\"\n\t}\n  },\n{\n\t\"studentID\":10009,\n\t\"firstname\":\"Can\",\n\t\"lastname\":\"Öztürk\",\n\t\"courses\":[\n\t{\n\t\"courseID\":4,\n\t\"courseName\":\"Bilgisayar Ağları\"\n\t},\n\t{\n\t\"courseID\":10,\n\t\"courseName\":\"Yazılım Test ve Kalite Güvencesi\"\n\t},\n\t\"courseID\":16,\n\t\"courseName\":\"Mikroişlemciler ve Gömülü Sistemler\"\n\t},\n\t{\n\t\"courseID\":22,\n\t\"courseName\":\"Makine Öğrenmesi\"\n\t},\n\t{\n\t\"courseID\":28,\n\t\"courseName\":\"Blockchain Teknolojileri\"\n\t}\n  },\n  {\n\t\"studentID\":10010,\n\t\"firstname\":\"Merve\",\n\t\"lastname\":\"Aksoy\",\n\t\"courses\":[\n\t{\n\t\"courseID\":4,\n\t\"courseName\":\"Bilgisayar Ağları\"\n\t},\n\t{\n\t\"courseID\":10,\n\t\"courseName\":\"Yazılım Test ve Kalite Güvencesi\"\n\t},\n\t\"courseID\":16,\n\t\"courseName\":\"Mikroişlemciler ve Gömülü Sistemler\"\n\t},\n\t{\n\t\"courseID\":22,\n\t\"courseName\":\"Makine Öğrenmesi\"\n\t},\n\t{\n\t\"courseID\":28,\n\t\"courseName\":\"Blockchain Teknolojileri\"\n\t}\n  },\n  {\n\t\"studentID\":10011,\n\t\"firstname\":\"Efe\",\n\t\"lastname\":\"Güneş\",\n\t\"courses\":[\n\t{\n\t\"courseID\":4,\n\t\"courseName\":\"Bilgisayar Ağları\"\n\t},\n\t{\n\t\"courseID\":10,\n\t\"courseName\":\"Yazılım Test ve Kalite Güvencesi\"\t\n\t},\n\t\"courseID\":16,\n\t\"courseName\":\"Mikroişlemciler ve Gömülü Sistemler\"\n\t},\n\t{\n\t\"courseID\":22,\n\t\"courseName\":\"Makine Öğrenmesi\"\n\t},\n\t{\n\t\"courseID\":28,\n\t\"courseName\":\"Blockchain Teknolojileri\"\n\t}\n  },\n  {\n\t\"studentID\":10012,\n\t\"firstname\":\"Selin\",\n\t\"lastname\":\"Bulut\",\n\t\"courses\":[\n\t{\n\t\"courseID\":4,\n\t\"courseName\":\"Bilgisayar Ağları\"\n\t},\n\t{\n\t\"courseID\":10,\n\t\"courseName\":\"Yazılım Test ve Kalite Güvencesi\"\t\n\t},\n\t\"courseID\":16,\n\t\"courseName\":\"Mikroişlemciler ve Gömülü Sistemler\"\n\t},\n\t{\n\t\"courseID\":22,\n\t\"courseName\":\"Makine Öğrenmesi\"\n\t},\n\t{\n\t\"courseID\":28,\n\t\"courseName\":\"Blockchain Teknolojileri\"\n\t}\n  },\n  {\n\t\"studentID\":10013,\n\t\"firstname\":\"Onur\",\n\t\"lastname\":\"Kurt\",\n\t\"courses\":[\n\t{\n\t\"courseID\":5,\n\t\"courseName\":\"Nesneye Yönelik Programlama\"\n\t},\n\t{\n\t\"courseID\":11,\n\t\"courseName\":\"İnsan-Bigisayar Etkileşimi\"\t\n\t},\n\t\"courseID\":14,\n\t\"courseName\":\"Bitirme Projesi 1\"\n\t},\n\t{\n\t\"courseID\":17,\n\t\"courseName\":\"Sayısal Mantık Tasarımı\"\n\t},\n\t{\n\t\"courseID\":23,\n\t\"courseName\":\"Yapay Zeka\"\n\t},\n\t{\n\t\"courseID\":29,\n\t\"courseName\":\"Siber Güvenlik\"\n\t}\n\n  },\n  {\n\t\"studentID\":10014,\n\t\"firstname\":\"Gizem\",\n\t\"lastname\":\"Aydın\",\n\t\"courses\":[\n\t{\n\t\"courseID\":5,\n\t\"courseName\":\"Nesneye Yönelik Programlama\"\n\t},\n\t{\n\t\"courseID\":11,\n\t\"courseName\":\"İnsan-Bigisayar Etkileşimi\"\t\n\t},\n\t\"courseID\":14,\n\t\"courseName\":\"Bitirme Projesi 1\"\n\t},\n\t{\n\t\"courseID\":17,\n\t\"courseName\":\"Sayısal Mantık Tasarımı\"\n\t},\n\t{\n\t\"courseID\":23,\n\t\"courseName\":\"Yapay Zeka\"\n\t},\n\t{\n\t\"courseID\":29,\n\t\"courseName\":\"Siber Güvenlik\"\n\t}\n\n  },\n  {\n\t\"studentID\":10015,\n\t\"firstname\":\"Furkan\",\n\t\"lastname\":\"Boz\",\n\t\"courses\":[\n\t{\n\t\"courseID\":5,\n\t\"courseName\":\"Nesneye Yönelik Programlama\"\n\t},\n\t{\n\t\"courseID\":11,\n\t\"courseName\":\"İnsan-Bigisayar Etkileşimi\"\t\n\t},\n\t\"courseID\":14,\n\t\"courseName\":\"Bitirme Projesi 1\"\n\t},\n\t{\n\t\"courseID\":17,\n\t\"courseName\":\"Sayısal Mantık Tasarımı\"\n\t},\n\t{\n\t\"courseID\":23,\n\t\"courseName\":\"Yapay Zeka\"\n\t},\n\t{\n\t\"courseID\":29,\n\t\"courseName\":\"Siber Güvenlik\"\n\t}\n\n  },\n  {\n\t\"studentID\":10016,\n\t\"firstname\":\"Ceren\",\n\t\"lastname\":\"Erdoğan\",\n\t\"courses\":[\n\t{\n\t\"courseID\":5,\n\t\"courseName\":\"Nesneye Yönelik Programlama\"\n\t},\n\t{\n\t\"courseID\":11,\n\t\"courseName\":\"İnsan-Bigisayar Etkileşimi\"\t\n\t},\n\t\"courseID\":14,\n\t\"courseName\":\"Bitirme Projesi 1\"\n\t},\n\t{\n\t\"courseID\":17,\n\t\"courseName\":\"Sayısal Mantık Tasarımı\"\n\t},\n\t{\n\t\"courseID\":23,\n\t\"courseName\":\"Yapay Zeka\"\n\t},\n\t{\n\t\"courseID\":29,\n\t\"courseName\":\"Siber Güvenlik\"\n\t}\n\n  },\n  {\n\t\"studentID\":10017,\n\t\"firstname\":\"Burak\",\n\t\"lastname\":\"Tan\",\n\t\"courses\":[\n\t{\n\t\"courseID\":6,\n\t\"courseName\":\"Veri Yapıları ve Algoritmalar\"\n\t},\n\t{\n\t\"courseID\":12,\n\t\"courseName\":\"Veri İletişimi ve Ağ Güvenliği\"\t\n\t},\n\t\"courseID\":14,\n\t\"courseName\":\"Bitirme Projesi 1\"\n\t},\n\t{\n\t\"courseID\":18,\n\t\"courseName\":\"Yazılım Gereksinim Mühendisliği\"\n\t},\n\t{\n\t\"courseID\":24,\n\t\"courseName\":\"Web Programlama\"\n\t}\n  },\n  {\n\t\"studentID\":10018,\n\t\"firstname\":\"Melis\",\n\t\"lastname\":\"Durmaz\",\n\t\"courses\":[\n\t{\n\t\"courseID\":6,\n\t\"courseName\":\"Veri Yapıları ve Algoritmalar\"\n\t},\n\t{\n\t\"courseID\":12,\n\t\"courseName\":\"Veri İletişimi ve Ağ Güvenliği\"\t\n\t},\n\t\"courseID\":14,\n\t\"courseName\":\"Bitirme Projesi 1\"\n\t},\n\t{\n\t\"courseID\":18,\n\t\"courseName\":\"Yazılım Gereksinim Mühendisliği\"\n\t},\n\t{\n\t\"courseID\":24,\n\t\"courseName\":\"Web Programlama\"\n\t}\t\n  },\n  {\n\t\"studentID\":10019,\n\t\"firstname\":\"Okan\",\n\t\"lastname\":\"Yıldırım\",\n\t\"courses\":[\n\t{\n\t\"courseID\":6,\n\t\"courseName\":\"Veri Yapıları ve Algoritmalar\"\n\t},\n\t{\n\t\"courseID\":12,\n\t\"courseName\":\"Veri İletişimi ve Ağ Güvenliği\"\t\n\t},\n\t\"courseID\":15,\n\t\"courseName\":\"Bitirme Projesi 2\"\n\t},\n\t{\n\t\"courseID\":18,\n\t\"courseName\":\"Yazılım Gereksinim Mühendisliği\"\n\t},\n\t{\n\t\"courseID\":24,\n\t\"courseName\":\"Web Programlama\"\n\t}\n  },\n  {\n\t\"studentID\":10020,\n\t\"firstname\":\"Eylül\",\n\t\"lastname\":\"Akkaya\",\n\t\"courses\":[\n\t{\n\t\"courseID\":6,\n\t\"courseName\":\"Veri Yapıları ve Algoritmalar\"\n\t},\n\t{\n\t\"courseID\":12,\n\t\"courseName\":\"Veri İletişimi ve Ağ Güvenliği\"\t\n\t},\n\t\"courseID\":15,\n\t\"courseName\":\"Bitirme Projesi 2\"\n\t},\n\t{\n\t\"courseID\":18,\n\t\"courseName\":\"Yazılım Gereksinim Mühendisliği\"\n\t},\n\t{\n\t\"courseID\":24,\n\t\"courseName\":\"Web Programlama\"\n\t}\n  },\n{\n\t\"studentID\":10021,\n\t\"firstname\":\"Berat\",\n\t\"lastname\":\"Taş\",\n\t\"courses\":[\n\t{\n\t\"courseID\":7,\n\t\"courseName\":\"Matematiksel Modelleme ve Simülasyon\"\n\t},\n\t{\n\t\"courseID\":13,\n\t\"courseName\":\"Yazılım Projesi Yönetimi\"\t\n\t},\n\t\"courseID\":15,\n\t\"courseName\":\"Bitirme Projesi 2\"\n\t},\n\t{\n\t\"courseID\":19,\n\t\"courseName\":\"Sistem Analizi ve Tasarımı\"\n\t},\n\t{\n\t\"\"courseID\":25,\n\t\"courseName\":\"Bulut Bilişim\"\n\t}\n  },\n  {\n\t\"studentID\":10022,\n\t\"firstname\":\"Damla\",\n\t\"lastname\":\"Karaca,\n\t\"courses\":[\n\t{\n\t\"courseID\":7,\n\t\"courseName\":\"Matematiksel Modelleme ve Simülasyon\"\n\t},\n\t{\n\t\"courseID\":13,\n\t\"courseName\":\"Yazılım Projesi Yönetimi\"\t\n\t},\n\t\"courseID\":15,\n\t\"courseName\":\"Bitirme Projesi 2\"\n\t},\n\t{\n\t\"courseID\":19,\n\t\"courseName\":\"Sistem Analizi ve Tasarımı\"\n\t},\n\t{\n\t\"\"courseID\":25,\n\t\"courseName\":\"Bulut Bilişim\"\n\t}\n  },\n  {\n\t\"studentID\":10023,\n\t\"firstname\":\"Kerem\",\n\t\"lastname\":\"Kara\",\n\t\"courses\":[\n\t{\n\t\"courseID\":7,\n\t\"courseName\":\"Matematiksel Modelleme ve Simülasyon\"\n\t},\n\t{\n\t\"courseID\":13,\n\t\"courseName\":\"Yazılım Projesi Yönetimi\"\t\n\t},\n\t\"courseID\":15,\n\t\"courseName\":\"Bitirme Projesi 2\"\n\t},\n\t{\n\t\"courseID\":19,\n\t\"courseName\":\"Sistem Analizi ve Tasarımı\"\n\t},\n\t{\n\t\"\"courseID\":25,\n\t\"courseName\":\"Bulut Bilişim\"\n\t}\n  },\n  {\n\t\"studentID\":10024,\n\t\"firstname\":\"Deniz\",\n\t\"lastname\":\"Erdem\",\n\t\"courses\":[\n\t{\n\t\"courseID\":7,\n\t\"courseName\":\"Matematiksel Modelleme ve Simülasyon\"\n\t},\n\t{\n\t\"courseID\":13,\n\t\"courseName\":\"Yazılım Projesi Yönetimi\"\t\n\t},\n\t\"courseID\":15,\n\t\"courseName\":\"Bitirme Projesi 2\"\n\t},\n\t{\n\t\"courseID\":19,\n\t\"courseName\":\"Sistem Analizi ve Tasarımı\"\n\t},\n\t{\n\t\"\"courseID\":25,\n\t\"courseName\":\"Bulut Bilişim\"\n\t}\n  }\n]\n"
+				}
+			]
+		},
+		{
+			"name": "api/StudentCourseSelection",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/StudentCourseSelection",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"StudentCourseSelection"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/StudentCourseSelection",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"StudentCourseSelection"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"studentID\": 10025,\n        \"firstname\": \"Fatmanur\",\n        \"lastname\": \"Akdemir\",\n        \"courses\": []\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "api/StudentCourseSelection{id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/StudentCourseSelection{id}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"StudentCourseSelection{id}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/StudentCourseSelection{id}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"StudentCourseSelection{id}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n{\n\t\"studentID\":10021,\n\t\"firstname\":\"Berat\",\n\t\"lastname\":\"Taş\",\n\t\"courses\":[\n\t{\n\t\"courseID\":7,\n\t\"courseName\":\"Matematiksel Modelleme ve Simülasyon\"\n\t},\n\t{\n\t\"courseID\":13,\n\t\"courseName\":\"Yazılım Projesi Yönetimi\"\t\n\t},\n\t\"courseID\":15,\n\t\"courseName\":\"Bitirme Projesi 2\"\n\t},\n\t{\n\t\"courseID\":19,\n\t\"courseName\":\"Sistem Analizi ve Tasarımı\"\n\t},\n\t{\n\t\"\"courseID\":25,\n\t\"courseName\":\"Bulut Bilişim\"\n\t}\n  }\n]\n"
+				}
+			]
+		},
+		{
+			"name": "api/StudentCourseSelection{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/StudentCourseSelection{id}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"StudentCourseSelection{id}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/StudentCourseSelection{id}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"StudentCourseSelection{id}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n{\n\t\"studentID\":10026,\n\t\"firstname\":\"Berat\",\n\t\"lastname\":\"Taş\",\n\t\"courses\":[\n\t{\n\t\"courseID\":7,\n\t\"courseName\":\"Matematiksel Modelleme ve Simülasyon\"\n\t},\n\t{\n\t\"courseID\":13,\n\t\"courseName\":\"Yazılım Projesi Yönetimi\"\t\n\t},\n\t\"courseID\":15,\n\t\"courseName\":\"Bitirme Projesi 2\"\n\t},\n\t{\n\t\"courseID\":19,\n\t\"courseName\":\"Sistem Analizi ve Tasarımı\"\n\t},\n\t{\n\t\"\"courseID\":25,\n\t\"courseName\":\"Bulut Bilişim\"\n\t}\n  }\n]\n"
+				}
+			]
+		},
+		{
+			"name": "api/StudentCourseSelection{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/StudentCourseSelection{id}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"StudentCourseSelection{id}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/StudentCourseSelection{id}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"StudentCourseSelection{id}"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://a57d4c4d-0af2-4bce-b66c-4b0aa6b4174c.mock.pstmn.io"
+		}
+	]
+}
